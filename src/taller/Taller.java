@@ -58,9 +58,10 @@ public class Taller {
         System.out.println("");
         System.out.println("El numero de autorizacion de factura ahora es: " +comp_fact.getNumeroAutorizacion());
         System.out.println("El numero de autorizacion de la guia de remision ahora es: " + comp_guia_rem.getNumeroAutorizacion());
-        System.out.println("");
         
-        System.out.println("--------\nPersonalizando el comprobante nota de credito");
+        
+        System.out.println("Patron Decorator\n--------\nNota de credito antes de personalización");
+        System.out.println(comp_nota_cred);
         comp_nota_cred= new LogoDecorator(new PiePaginaDecorator(comp_nota_cred));
         System.out.println("--------\nSe ha personalizado el comprobante");
         System.out.println(comp_nota_cred);
