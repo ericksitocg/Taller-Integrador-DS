@@ -39,9 +39,11 @@ public class NotaCredito extends ComprobanteElectronico{
     public void setValorAPagar(double valorAPagar) {
         this.valorAPagar = valorAPagar;
     }
-    
-    
-    
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nDetalles de NotaCredito\n" + "detalleModificacion=" + detalleModificacion + ",\nvalorAPagar=" + valorAPagar + "\n*****************************************";
+    }
     
     
 }
