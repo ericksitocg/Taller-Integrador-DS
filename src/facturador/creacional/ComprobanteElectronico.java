@@ -81,8 +81,9 @@ public class ComprobanteElectronico {
         this.claveAcceso = claveAcceso;
     }
 
-    
-    
-    
-    
+    @Override
+    public String toString() {
+        return "*********" + "ComprobanteElectronico" + "*********\n" + "detallesEmisor=" + detallesEmisor + ",\nnombreCliente=" + nombreCliente + ",\ncodigo=" + codigo + ",\nfecha=" + fecha + ",\nnumeroAutorizacion=" + numeroAutorizacion + ",\nclaveAcceso=" + claveAcceso + "\n";
+    }
+ 
 }
