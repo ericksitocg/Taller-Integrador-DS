@@ -15,7 +15,7 @@ public class EsquemaOnline implements Esquema {
 
     @Override
     public void autorizar(ComprobanteElectronico comprobante) {
-        String nAutorizacion = Integer.toString((int)(Math.random() * 10000) + 1);
+        String nAutorizacion = Double.toString((Math.random() * 10000) + 1);
         comprobante.setNumeroAutorizacion(nAutorizacion);
     }
     
