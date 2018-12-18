@@ -53,7 +53,7 @@ public class GuiaRemision extends ComprobanteElectronico {
 
     @Override
     public String toString() {
-        return super.toString() + "\nGuia de Remision\n" + "\nDetalles del emisor: " + super.getDetallesEmisor() + "\nClave de acceso: " + super.getClaveAcceso() + "\nFecha: " + super.getFecha() +"Destino: " + destino + ",\nPlaca de Vehiculo: " + placaVehiculo + ",\nLista de Productos: " + listaProductos;
+        return "\n*****Guia de Remision*****" + "\nDetalles del emisor: " + super.getDetallesEmisor() + "\nClave de acceso: " + super.getClaveAcceso() + "\nFecha: " + super.getFecha() +"Destino: " + destino + ",\nPlaca de Vehiculo: " + placaVehiculo + ",\nLista de Productos: " + listaProductos;
     }
     
     
