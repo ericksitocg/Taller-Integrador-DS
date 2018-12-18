@@ -46,6 +46,7 @@ public class Taller {
         comp_fact.setClaveAcceso("12345");
               
         System.out.println(comp_fact);
+        System.out.println(comp_guia_rem);
         System.out.println(comp_nota_cred);
         //realizando la autorizacion con los diferentes esquemas
         
