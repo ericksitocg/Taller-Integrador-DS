@@ -5,10 +5,24 @@
  */
 package facturador.estructural;
 
+import facturador.creacional.ComprobanteElectronico;
+import facturador.creacional.ComprobantesFactory;
+import java.util.List;
+import java.util.Set;
+
 /**
  *
  * @author Administrador
  */
-public class ComprobanteDecorator {
+public class ComprobanteDecorator extends ComprobanteElectronico{
+    ComprobanteElectronico comprobante;
+    
+    public ComprobanteDecorator(ComprobanteElectronico comprobante){
+        this.comprobante=comprobante;
+    }
+    
+    public List<String> getDetallesEmisor() {
+        return comprobante.getDetallesEmisor();
+    }
     
 }

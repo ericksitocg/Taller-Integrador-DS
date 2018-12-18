@@ -13,6 +13,8 @@ import facturador.creacional.ComprobantesFactory;
 import facturador.creacional.Factura;
 import facturador.creacional.GuiaRemision;
 import facturador.creacional.NotaCredito;
+import facturador.estructural.LogoDecorator;
+import facturador.estructural.PiePaginaDecorator;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -54,6 +56,9 @@ public class Taller {
         System.out.println("El numero de autorizacion de la guia de remision ahora es: " + comp_guia_rem.getNumeroAutorizacion());
 
         
+        comp_fact= new LogoDecorator(new PiePaginaDecorator(comp_fact));
+        System.out.println("--------\nSe ha personalizado el comprobante");
+        System.out.println(comp_fact.getDetallesEmisor());
         
     }
     
