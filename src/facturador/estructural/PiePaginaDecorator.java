@@ -19,7 +19,7 @@ public class PiePaginaDecorator extends ComprobanteDecorator{
     }
     
     public List<String> getDetallesEmisor() {
-        List<String> detalles=comprobante.getDetallesEmisor();
+        List<String> detalles=super.getDetallesEmisor();
         detalles.add("Pie de pagina");
         return detalles;
     }
