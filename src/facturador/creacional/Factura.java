@@ -44,7 +44,7 @@ public class Factura extends ComprobanteElectronico{
 
     @Override
     public String toString() {
-        return "\nFactura\n" + "Nombre Cliente: " + super.getNombreCliente() + "\nNumero de autorizacion: "+ super.getNumeroAutorizacion()+"\nClave de acceso: "+ super.getClaveAcceso() + "\nCodigo: " + super.getCodigo() + "\nFecha: " + super.getFecha() +"\nProductos: " + productos + ",\nTotal: " + total;
+        return "\n*****Factura*****\n" + "Nombre Cliente: " + super.getNombreCliente() + "\nNumero de autorizacion: "+ super.getNumeroAutorizacion()+"\nClave de acceso: "+ super.getClaveAcceso() + "\nCodigo: " + super.getCodigo() + "\nFecha: " + super.getFecha() +"\nProductos: " + productos + ",\nTotal: " + total;
     }
 
     
