@@ -45,18 +45,22 @@ public class Taller {
         //Dando detalles a la factura
         comp_fact.setClaveAcceso("12345");
               
-        System.out.println(comp_fact);
-        System.out.println(comp_guia_rem);
-        System.out.println(comp_nota_cred);
+        System.out.println("\nSe presenta una factura" +comp_fact);
+        System.out.println("\nSe presenta una guia de Remision" + comp_guia_rem);
+        System.out.println("\nSe presenta una nota de Credito" + comp_nota_cred);
         //realizando la autorizacion con los diferentes esquemas
         
+        System.out.println("\nAutorizando ....");
         autorizadorOffline.autorizar(comp_fact);
         autorizadorOnline.autorizar(comp_guia_rem);
         
+        System.out.println("Verificando los cambios gracias a la autorizacion: ");
+        System.out.println("");
         System.out.println("El numero de autorizacion de factura ahora es: " +comp_fact.getNumeroAutorizacion());
         System.out.println("El numero de autorizacion de la guia de remision ahora es: " + comp_guia_rem.getNumeroAutorizacion());
-
-        System.out.println(comp_nota_cred);
+        System.out.println("");
+        
+        System.out.println("--------\nPersonalizando el comprobante nota de credito");
         comp_nota_cred= new LogoDecorator(new PiePaginaDecorator(comp_nota_cred));
         System.out.println("--------\nSe ha personalizado el comprobante");
         System.out.println(comp_nota_cred);
