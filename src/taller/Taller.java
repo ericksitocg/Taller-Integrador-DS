@@ -57,7 +57,7 @@ public class Taller {
 
         
         comp_fact= new LogoDecorator(new PiePaginaDecorator(comp_fact));
-        System.out.println("--------\nSe ha personalizado el comprobante");
+        System.out.println("--------\nSe ha personalizado el comprobante por Erick Cordova");
         System.out.println(comp_fact.getDetallesEmisor());
         
     }
