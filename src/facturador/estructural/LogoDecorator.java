@@ -17,7 +17,7 @@ public class LogoDecorator extends ComprobanteDecorator {
     }
     
     public List<String> getDetallesEmisor() {
-        List<String> detalles=comprobante.getDetallesEmisor();
+        List<String> detalles=super.getDetallesEmisor();
         detalles.add("Logo");
         return detalles;
     }

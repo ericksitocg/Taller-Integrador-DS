@@ -83,7 +83,7 @@ public class ComprobanteElectronico {
 
     @Override
     public String toString() {
-        return "*********" + "Comprobante Electronico" + "*********\n" + "Detalles de Emisor:" + detallesEmisor + ",\nNombre del Cliente:" + nombreCliente + ",\nCodigo:" + codigo + ",\nFecha:" + fecha + "\nNumero de Autorizacion:" + numeroAutorizacion + ",\nClave de Acceso:" + claveAcceso + "\n";
+        return "*********" + "Comprobante Electronico" + "*********\n" + "Detalles de Emisor:" + getDetallesEmisor() + ",\nNombre del Cliente:" + getNombreCliente() + ",\nCodigo:" + getCodigo() + ",\nFecha:" + getFecha() + "\nNumero de Autorizacion:" + getNumeroAutorizacion() + ",\nClave de Acceso:" + getClaveAcceso() + "\n";
     }
  
 }
